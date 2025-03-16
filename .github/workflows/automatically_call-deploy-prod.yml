@@ -48,7 +48,7 @@ jobs:
 
       - name: Check if Solution.xml exists
         run: |
-          if [ -f "out/solutions/${{ inputs.solution_name }}/Other/Solution.xml" ]; then
+          if [ -f "out/solutions/${{ inputs.solution_name }}" ]; then
             echo "Solution.xml exists."
           else
             echo "Solution.xml does not exist."
